@@ -1,0 +1,20 @@
+{
+  "name": "client-track",
+  "version": "1.0.0",
+  "description": "Keep tracks of clients and payments.",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "author": "Jason Portilla",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^3.0.2",
+    "dotenv": "^6.1.0",
+    "jsonwebtoken": "^8.3.0",
+    "mongoose": "^5.3.9",
+    "restify": "^7.2.2",
+    "restify-errors": "^6.1.1",
+    "restify-jwt-community": "^1.0.8"
+  }
+}
