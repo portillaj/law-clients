@@ -1,0 +1,33 @@
+@mixin screen-xs {
+  @media (max-width: #{$screen-sm-min}) {
+    @content;
+  }
+}
+
+@mixin screen-sm {
+  @media (min-width: #{$screen-sm-min}) {
+    @content;
+  }
+}
+
+@mixin screen-md {
+  @media (min-width: #{$screen-md-min}) {
+    @content;
+  }
+}
+
+@mixin screen-lg {
+  @media (min-width: #{$screen-lg-min}) {
+    @content;
+  }
+}
+
+/* Usage Examples
+@include screen-md {
+    text-align: left;
+}
+
+@include screen-lg {
+    text-align: right;
+}
+*/
