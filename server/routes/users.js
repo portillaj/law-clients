@@ -33,12 +33,9 @@ module.exports = server => {
     const { email, password } = req.body;
     try {
       const user = await auth.authenticate(email, password);
-      console.log('the user ', user);
       const token = jwt.sign(user.toJSON(), config.JWT_SECRET, {
         expiresIn: '15m'
       });
-      console.log('the user', user);
-      console.log('token', token);
       const { iat, exp } = jwt.decode(token);
       res.send({ iat, exp, token });
       next();
